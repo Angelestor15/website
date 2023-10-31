@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="fotos.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <section class="galeria">
+        <img src="./12.jpg" alt="">
+        <img src="./14.jpg" alt="">
+        <img src="./15.jpg" alt="">
+        <img src="./1698106866671.jpg" alt="">
+        <img src="./1698106866682.jpg" alt="">
+    </section>
+</body>
+</html>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
